@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class TouchManager : MonoBehaviour
 {
@@ -11,8 +12,11 @@ public class TouchManager : MonoBehaviour
     private InputAction touchPressAction;
     private Camera mainCamera;
 
+    private PointerEventData pointerEventData;
+    private List<RaycastResult> raycastResults = new List<RaycastResult>();
+
     [SerializeField]
-    private float distance = 10f;
+    private float distance = 20f;
     [SerializeField]
     private LayerMask mask;
 
@@ -59,6 +63,9 @@ public class TouchManager : MonoBehaviour
 
     private void HandleTouch(Vector2 touchPos)
     {
+        // Verificar si el toque está sobre la UI
+        if (IsPointerOverUI(touchPos)) return;
+
         // Lanzar un rayo para detectar objetos
         RaycastHit hit;
         Ray ray = mainCamera.ScreenPointToRay(touchPos);
@@ -80,5 +87,22 @@ public class TouchManager : MonoBehaviour
                 Debug.Log("¡Tocaste un objeto que no es interactuable!");
             }
         }
+    }
+
+    private bool IsPointerOverUI(Vector2 touchPosition) 
+    {
+        if (EventSystem.current == null) {
+            Debug.LogError("EventSystem not found in the scene.");
+            return false;
+        }
+
+        if (pointerEventData == null) pointerEventData = new PointerEventData(EventSystem.current);
+
+        pointerEventData.position = touchPosition;
+        raycastResults.Clear();
+    
+        EventSystem.current.RaycastAll(pointerEventData, raycastResults);
+
+        return raycastResults.Count > 0;
     }
 }
