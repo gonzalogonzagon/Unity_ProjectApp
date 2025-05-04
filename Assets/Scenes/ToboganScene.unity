@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 48642294}
   - component: {fileID: 48642293}
   - component: {fileID: 48642295}
+  - component: {fileID: 48642296}
   m_Layer: 6
   m_Name: ToboganInfo
   m_TagString: Untagged
@@ -150,8 +151,8 @@ Transform:
   m_GameObject: {fileID: 48642291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.922, y: -5.9599996, z: -0.39300108}
-  m_LocalScale: {x: 0.1964923, y: 0.19649225, z: 0.19649225}
+  m_LocalPosition: {x: 4.84, y: -5.833333, z: 0}
+  m_LocalScale: {x: 0.104166664, y: 0.104166664, z: 0.104166664}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 462376940}
@@ -244,14 +245,23 @@ MonoBehaviour:
   canvasModalText: {fileID: 2107918628}
   canvasModalText2: {fileID: 1284132262}
   infoTitle: "Informaci\xF3n"
-  infoDescription: 'A tragic story of a man being gradually consumed by his inner
-    voices (the title "bla bla bla"). At first the voices are nothing more than hallucination
-    and can be easily ignored, but as the song progresses they become louder and
-    more dangeous, to the point that the man sees himself as stranded in the middle
-    of the ocean with the voices resembling sharks. Next he struggles to find a way
-    out from the labirynth of his psyche just to see a glimpse of a normal reality,
-    but in the end he is unable to and when the song comes to an end, the man becomes
-    reduced to just one more voice inside his head. '
+  infoDescription: "En esta postal promocional se pueden observar grupos de adultos
+    ascendiendo por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras
+    otros ya disfrutan del descenso por la pendiente."
+--- !u!114 &48642296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48642291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea276ad4b56c3364e9f10fdb9da186dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flipFace: 1
+  useWorldUp: 0
 --- !u!1 &163070266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
@@ -277,14 +287,9 @@ MonoBehaviour:
   canvasModalText: {fileID: 865400533}
   canvasModalText2: {fileID: 902825994}
   infoTitle: "Informaci\xF3n"
-  infoDescription: 'A tragic story of a man being gradually consumed by his inner
-    voices (the title "bla bla bla"). At first the voices are nothing more than hallucination
-    and can be easily ignored, but as the song progresses they become louder and
-    more dangeous, to the point that the man sees himself as stranded in the middle
-    of the ocean with the voices resembling sharks. Next he struggles to find a way
-    out from the labirynth of his psyche just to see a glimpse of a normal reality,
-    but in the end he is unable to and when the song comes to an end, the man becomes
-    reduced to just one more voice inside his head. '
+  infoDescription: "Cada viaje costaba 15 c\xE9ntimos, el precio de un peri\xF3dico
+    m\xE1s o menos, aunque siempre pod\xEDas adquirir un bono de 10 viajes por una
+    peseta."
 --- !u!1 &167477739
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,10 +709,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462376938}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 20, z: -5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0.6427876, y: -0, z: -0, w: 0.7660445}
+  m_LocalPosition: {x: 0, y: 19.001562, z: -7.412196}
+  m_LocalScale: {x: 1.2, y: 1.1999999, z: 1.1999999}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 48642292}
   m_Father: {fileID: 700753442}
@@ -826,9 +831,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468014828}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 6.34, y: 23.290005, z: -9.499999}
-  m_LocalScale: {x: 0.25, y: 0.24999994, z: 0.24999994}
+  m_LocalRotation: {x: 0.6427876, y: -0, z: -0, w: 0.7660445}
+  m_LocalPosition: {x: 6.34, y: 21.286518, z: -13.399945}
+  m_LocalScale: {x: 0.25, y: 0.24999997, z: 0.24999997}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 163070267}
@@ -926,9 +931,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536491592}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6197671, y: -0.3404243, z: -0.3404243, w: 0.6197671}
-  m_LocalPosition: {x: -7.5, y: 24.220005, z: -10}
-  m_LocalScale: {x: 0.59999996, y: 0.59999996, z: 0.6}
+  m_LocalRotation: {x: 0.5633924, y: -0.36879885, z: -0.30945894, w: 0.67142504}
+  m_LocalPosition: {x: -7.5, y: 22.202394, z: -13.561435}
+  m_LocalScale: {x: 0.60000014, y: 0.59999996, z: 0.60000014}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 167477740}
@@ -1354,16 +1359,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700753439}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0.6427876, y: 0, z: 0, w: 0.7660445}
   m_LocalPosition: {x: 0, y: 12, z: 30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 462376940}
-  - {fileID: 536491594}
   - {fileID: 468014830}
+  - {fileID: 536491594}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -80, y: 0, z: 0}
 --- !u!114 &700753443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,7 +1778,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2164,7 +2169,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
