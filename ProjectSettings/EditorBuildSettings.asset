@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MapaScene.unity
+    guid: 2c91040f5e5e4e740af351a4684fffaf
+  - enabled: 1
+    path: Assets/Scenes/RToboganScene.unity
+    guid: 779018cd153c21649963c352dd604d91
+  - enabled: 1
     path: Assets/Scenes/CabinaScene.unity
     guid: 73fc30b841f538b49b761aff741ee9b1
   - enabled: 1
