@@ -27,6 +27,7 @@ public class RTouchManager : MonoBehaviour
     private Vector2 initialTouchPosition;
     private Vector2 currentTouchPosition;
     private bool isDragging;
+    private float touchStartTime;
     [SerializeField]
     private float rotationSpeed = 0.05f; // Ajusta la velocidad de rotación según sea necesario
 
@@ -81,8 +82,7 @@ public class RTouchManager : MonoBehaviour
         // Is dragging?
         initialTouchPosition = touchPos;
         isDragging = true;
-
-        HandleTouch(touchPos);
+        touchStartTime = Time.time;
     }
 
     private void OnTouchMoved(InputAction.CallbackContext context)
@@ -108,8 +108,12 @@ public class RTouchManager : MonoBehaviour
     private void OnTouchEnded(InputAction.CallbackContext context)
     {
         isDragging = false;
-
         ZoomEnd();
+
+        float touchDuration = Time.time - touchStartTime;
+
+        if (touchDuration < 0.2f)
+            HandleTouch(initialTouchPosition);
     }
 
     private void HandleTouch(Vector2 touchPos)

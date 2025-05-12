@@ -2058,8 +2058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 0}
-  canvasModalText2: {fileID: 0}
+  canvasModalText: {fileID: 1203400995}
+  canvasModalText2: {fileID: 1485354037}
   infoTitle: "Informaci\xF3n"
   infoDescription: "En primer plano, se observa un grupo de personas caminando por
     la plaza empedrada, lo que nos da una idea del ambiente cotidiano de la \xE9poca."
@@ -2297,8 +2297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 0}
-  canvasModalText2: {fileID: 0}
+  canvasModalText: {fileID: 1203400995}
+  canvasModalText2: {fileID: 1485354037}
   infoTitle: "Informaci\xF3n"
   infoDescription: "El transporte p\xFAblico de aquella \xE9poca, impulsado por electricidad,
     era un s\xEDmbolo de modernizaci\xF3n."
