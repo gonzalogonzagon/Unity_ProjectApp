@@ -29,13 +29,15 @@ public class RTouchManager : MonoBehaviour
     private bool isDragging;
     private float touchStartTime;
     [SerializeField]
+    private float dragTreshold = 0.2f;
+    [SerializeField]
     private float rotationSpeed = 0.05f; // Ajusta la velocidad de rotación según sea necesario
 
     private bool isZooming = false;
     [SerializeField]
-    private float pinchThreshold = 10f; // Ajusta este valor según sea necesario
+    private float pinchThreshold = 5f; // Ajusta este valor según sea necesario
     [SerializeField]
-    private float cameraSpeed = 60f; // Ajusta la velocidad de zoom según sea necesario
+    private float cameraSpeed = 15f; // Ajusta la velocidad de zoom según sea necesario
 
     private Coroutine zoomCoroutine;
 
@@ -64,6 +66,8 @@ public class RTouchManager : MonoBehaviour
         touchPressAction.canceled += OnTouchEnded;
         touchPositionAction.performed += OnTouchMoved;
         pinchActionFinger1.performed += ZoomStart;
+        pinchActionFinger1.canceled += ZoomEnd;
+        pinchActionFinger2.performed += ZoomEnd;
     }
 
     private void OnDisable()
@@ -112,7 +116,7 @@ public class RTouchManager : MonoBehaviour
 
         float touchDuration = Time.time - touchStartTime;
 
-        if (touchDuration < 0.2f)
+        if (touchDuration < dragTreshold)
             HandleTouch(initialTouchPosition);
     }
 
@@ -199,39 +203,42 @@ public class RTouchManager : MonoBehaviour
         }
     }
 
+    private void ZoomEnd(InputAction.CallbackContext context) {
+        ZoomEnd();
+    }
+
     private IEnumerator ZoomDetection()
     {
-        float previousDistance = 0f, currentDistance = 0f;
+        Vector2 touch0Position = pinchActionFinger1.ReadValue<Vector2>();
+        Vector2 touch1Position = pinchActionFinger2.ReadValue<Vector2>();
+        float previousDistance = Vector2.Distance(touch0Position, touch1Position); // Inicializar con la distancia inicial
+        float currentDistance = 0f;
 
         while (true)
         {
             // Obtener las posiciones de los dos toques
-            Vector2 touch0Position = pinchActionFinger1.ReadValue<Vector2>(); // Primer toque
-            Vector2 touch1Position = pinchActionFinger2.ReadValue<Vector2>(); // Segundo toque (pinch)
+            touch0Position = pinchActionFinger1.ReadValue<Vector2>(); // Primer toque
+            touch1Position = pinchActionFinger2.ReadValue<Vector2>(); // Segundo toque (pinch)
 
             // Calcular la distancia actual entre los dos toques
             currentDistance = Vector2.Distance(touch0Position, touch1Position);
 
             // Comparar con la distancia previa para determinar el gesto
-            if (previousDistance != 0)
+            if (Mathf.Abs(currentDistance - previousDistance) > pinchThreshold)
             {
                 float delta = currentDistance - previousDistance;
 
-                if (Mathf.Abs(delta) > pinchThreshold) // Ignorar pequeños cambios
+                if (delta < 0)
                 {
-                    if (delta < 0)
-                    {
-                        // Zoom In
-                        mainCamera.fieldOfView = Mathf.Max(mainCamera.fieldOfView - cameraSpeed * Time.deltaTime, 20f); // Límite mínimo
-                    }
-                    else
-                    {
-                        // Zoom Out
-                        mainCamera.fieldOfView = Mathf.Min(mainCamera.fieldOfView + cameraSpeed * Time.deltaTime, 60f); // Límite máximo
-                    }
+                    // Zoom In
+                    mainCamera.fieldOfView = Mathf.Max(mainCamera.fieldOfView - cameraSpeed * Mathf.Abs(delta) * Time.deltaTime, 20f);
+                }
+                else
+                {
+                    // Zoom Out
+                    mainCamera.fieldOfView = Mathf.Min(mainCamera.fieldOfView + cameraSpeed * Mathf.Abs(delta) * Time.deltaTime, 90f);
                 }
             }
-
             // Actualizar la distancia previa
             previousDistance = currentDistance;
 
