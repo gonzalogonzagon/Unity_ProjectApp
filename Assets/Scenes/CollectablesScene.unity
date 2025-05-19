@@ -356,13 +356,13 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: madrid_puerta_de_alcala_detail_central_portal_east_side
+  mTrackableName: puerta_alcala
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/CollectablesDB.xml
-  mAspectRatio: 0.75
+  mAspectRatio: 0.7525392
   mImageTargetType: 0
-  mWidth: 14
-  mHeight: 10.5
+  mWidth: 35
+  mHeight: 26.338873
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -377,7 +377,7 @@ Transform:
   m_GameObject: {fileID: 1023775589}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 18, z: 10}
+  m_LocalPosition: {x: 0, y: 14, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1023775592}
   mHiddenRoot: {fileID: 0}
-  mTargetName: madrid_puerta_de_alcala_detail_central_portal_east_side
+  mTargetName: puerta_alcala
   mDatasetName: Vuforia/CollectablesDB.xml
   mCastedBehaviour: {fileID: 1023775592}
   mMeshFilter: {fileID: 0}
@@ -627,27 +627,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.49999988
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.49999988
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.69
+      value: 5.51
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6900005
+      value: 2.690001
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.840001
+      value: -0.84000194
       objectReference: {fileID: 0}
     - target: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
       propertyPath: m_LocalRotation.w
@@ -814,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 1858134879}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.33, y: 0.83, z: 10.46}
+  m_LocalPosition: {x: -1.33, y: 0.83, z: 8.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

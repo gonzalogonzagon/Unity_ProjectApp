@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="puerta_alcala" size="35.000000 26.338873" />
     <ImageTarget name="madrid_puerta_de_alcala_detail_central_portal_east_side" size="14.000000 10.500000" />
   </Tracking>
 </QCARConfig>

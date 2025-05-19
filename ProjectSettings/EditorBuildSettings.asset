@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ToboganScene.unity
     guid: fe233d9d663c1a24797ab413a99bede1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/RToboganScene.unity
     guid: 779018cd153c21649963c352dd604d91
   - enabled: 0
@@ -23,9 +23,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ClaraScene.unity
     guid: 9dd7a67f01d82354491377991e3860ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CollectablesScene.unity
     guid: 1cca10a03aa25e44e8f257d950f1ab9d
+  - enabled: 0
+    path: Assets/Scenes/RCabinaScene.unity
+    guid: dcd68b34ab51f2344ad4cc00b8a95edf
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 689b0a80aa1c36f40b6cc3f6bf369d5b, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 8f6bf258d0b82da4cb67005814eb77e0, type: 3}
