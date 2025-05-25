@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="Suelo3_FloridaPark_Target" size="2.000000 2.255149" />
     <ImageTarget name="Busto_FloridaPark" size="0.800000 1.345386" />
   </Tracking>
 </QCARConfig>
