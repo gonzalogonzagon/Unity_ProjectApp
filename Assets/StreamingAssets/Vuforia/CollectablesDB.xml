@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="puertaAlcala_target2" size="13.000000 11.066021" />
+    <ImageTarget name="Sol_Target2" size="13.500000 13.766949" />
     <ImageTarget name="Escudo_EntradaPalacio_Target" size="2.000000 2.091993" />
     <ImageTarget name="Sol_Target" size="13.500000 14.127159" />
     <ImageTarget name="Casa_de_la_Panaderia" size="4.500000 6.447205" />

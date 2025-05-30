@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="palacio_cibeles3" size="10.000000 10.336967" />
+    <ImageTarget name="palacio_cibeles2" size="10.000000 15.807560" />
     <ImageTarget name="palacio_cibeles1" size="10.000000 14.261539" />
   </Tracking>
 </QCARConfig>

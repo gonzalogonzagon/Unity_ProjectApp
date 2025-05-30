@@ -1,0 +1,63 @@
+// CanvasModalTextPages.cs
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using TMPro;
+
+
+public class CanvasModalTextPages : MonoBehaviour
+{
+    public TMP_Text textPanel; // Asigna tu componente Text aquí
+    public Button buttonNext;
+    public Button buttonBack;
+    [TextArea] public string longText;
+    public int charsPerPage = 300;
+
+    private List<string> pages = new List<string>();
+    private int currentPage = 0;
+
+    void Start()
+    {
+        PaginateText();
+        ShowPage(0);
+
+        buttonNext.onClick.AddListener(NextPage);
+        buttonBack.onClick.AddListener(PreviousPage);
+    }
+
+    void PaginateText()
+    {
+        pages.Clear();
+        for (int i = 0; i < longText.Length; i += charsPerPage)
+        {
+            int length = Mathf.Min(charsPerPage, longText.Length - i);
+            pages.Add(longText.Substring(i, length));
+        }
+    }
+
+    void ShowPage(int page)
+    {
+        if (pages.Count == 0) return;
+        textPanel.text = pages[page];
+        buttonBack.interactable = page > 0;
+        buttonNext.interactable = page < pages.Count - 1;
+    }
+
+    void NextPage()
+    {
+        if (currentPage < pages.Count - 1)
+        {
+            currentPage++;
+            ShowPage(currentPage);
+        }
+    }
+
+    void PreviousPage()
+    {
+        if (currentPage > 0)
+        {
+            currentPage--;
+            ShowPage(currentPage);
+        }
+    }
+}
