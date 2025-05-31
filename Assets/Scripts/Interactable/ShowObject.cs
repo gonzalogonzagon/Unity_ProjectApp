@@ -3,10 +3,10 @@ using UnityEngine;
 public class ShowObject : MonoBehaviour, IInteractable
 {
     [SerializeField]
-    private GameObject targetObject; // Objeto que se activará al interactuar
+    public GameObject targetObject; // Objeto que se activará al interactuar
 
     [SerializeField]
-    private bool hideObject = true; // Determina si el objeto comienza visible o no
+    public bool hideObject = true; // Determina si el objeto comienza visible o no
 
     public void Interact()
     {

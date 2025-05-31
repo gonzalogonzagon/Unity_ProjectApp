@@ -23,7 +23,7 @@ public class RTouchManager2D : MonoBehaviour
     [SerializeField]
     private LayerMask mask;
     [SerializeField]
-    private Transform targetSprite;
+    private Transform targetContent;
 
     private Vector2 initialTouchPosition;
     private Vector3 initialCameraPosition;
@@ -58,17 +58,17 @@ public class RTouchManager2D : MonoBehaviour
         mainCamera = Camera.main;
 
         // Calcular límites de movimiento basados en el sprite
-        if (targetSprite != null)
+        if (targetContent != null)
         {
-            SpriteRenderer sr = targetSprite.GetComponent<SpriteRenderer>();
+            SpriteRenderer sr = targetContent.GetComponent<SpriteRenderer>();
             Vector2 spriteSize = sr.bounds.size;
             float vertExtent = mainCamera.orthographicSize;
             float horzExtent = vertExtent * Screen.width / Screen.height;
 
-            minX = targetSprite.position.x - spriteSize.x / 2 + horzExtent;
-            maxX = targetSprite.position.x + spriteSize.x / 2 - horzExtent;
-            minY = targetSprite.position.y - spriteSize.y / 2 + vertExtent;
-            maxY = targetSprite.position.y + spriteSize.y / 2 - vertExtent;
+            minX = targetContent.position.x - spriteSize.x / 2 + horzExtent;
+            maxX = targetContent.position.x + spriteSize.x / 2 - horzExtent;
+            minY = targetContent.position.y - spriteSize.y / 2 + vertExtent;
+            maxY = targetContent.position.y + spriteSize.y / 2 - vertExtent;
         }
     }
 
@@ -229,17 +229,31 @@ public class RTouchManager2D : MonoBehaviour
 
     private void UpdateCameraBounds()
     {
-        if (targetSprite != null)
+        if (targetContent != null)
         {
-            SpriteRenderer sr = targetSprite.GetComponent<SpriteRenderer>();
+            SpriteRenderer sr = targetContent.GetComponent<SpriteRenderer>();
             Vector2 spriteSize = sr.bounds.size;
             float vertExtent = mainCamera.orthographicSize;
             float horzExtent = vertExtent * Screen.width / Screen.height;
 
-            minX = targetSprite.position.x - spriteSize.x / 2 + horzExtent;
-            maxX = targetSprite.position.x + spriteSize.x / 2 - horzExtent;
-            minY = targetSprite.position.y - spriteSize.y / 2 + vertExtent;
-            maxY = targetSprite.position.y + spriteSize.y / 2 - vertExtent;
+            minX = targetContent.position.x - spriteSize.x / 2 + horzExtent;
+            maxX = targetContent.position.x + spriteSize.x / 2 - horzExtent;
+            minY = targetContent.position.y - spriteSize.y / 2 + vertExtent;
+            maxY = targetContent.position.y + spriteSize.y / 2 - vertExtent;
+        }
+    }
+
+    public void SetTargetContent(Transform newTarget)
+    {
+        targetContent = newTarget;
+        targetToScale = newTarget;
+        UpdateCameraBounds();
+
+        // Centra la cámara en el nuevo target
+        if (mainCamera != null && targetContent != null)
+        {
+            Vector3 targetPos = targetContent.position;
+            mainCamera.transform.position = new Vector3(targetPos.x, targetPos.y, mainCamera.transform.position.z);
         }
     }
 
