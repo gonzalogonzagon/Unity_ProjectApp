@@ -14,7 +14,7 @@ public class InfoMarker1 : MonoBehaviour, IInteractable
     private string infoTitle = "Información"; // Título que se mostrará en el canvas
     
     [SerializeField]
-    private string infoDescription = "Este es un punto de interés."; // Descripción a mostrar
+    public string infoDescription = "Este es un punto de interés."; // Descripción a mostrar
     
     private bool isInteractable = true; // Determina si el marcador puede ser interactuado
 
