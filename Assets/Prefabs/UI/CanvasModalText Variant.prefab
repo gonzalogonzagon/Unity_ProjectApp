@@ -67,10 +67,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "En esta postal promocional se pueden observar grupos de adultos ascendiendo
     por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras otros ya
-    disfrutan del descenso por la pendiente."
+    disfrutan del descenso por la pendiente.\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac7eae7adda35a94897deb4f374b051b, type: 2}
+  m_sharedMaterial: {fileID: 6721376035775576195, guid: ac7eae7adda35a94897deb4f374b051b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 78.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 30, y: 0, z: 30, w: 0}
+  m_margin: {x: 30, y: 0, z: 30, w: 153.81067}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

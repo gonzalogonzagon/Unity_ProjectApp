@@ -11,7 +11,13 @@ public class CanvasModalTextPages : MonoBehaviour
     public Button buttonNext;
     public Button buttonBack;
     [TextArea] public string longText;
-    public int charsPerPage = 300;
+    
+    public enum PaginationMode
+    {
+        ByPeriod,
+        ByNewLine
+    }
+    public PaginationMode paginationMode = PaginationMode.ByPeriod;
 
     private List<string> pages = new List<string>();
     private int currentPage = 0;
@@ -28,10 +34,25 @@ public class CanvasModalTextPages : MonoBehaviour
     void PaginateText()
     {
         pages.Clear();
-        for (int i = 0; i < longText.Length; i += charsPerPage)
+        if (paginationMode == PaginationMode.ByPeriod)
         {
-            int length = Mathf.Min(charsPerPage, longText.Length - i);
-            pages.Add(longText.Substring(i, length));
+            string[] sentences = longText.Split(new[] { '.' }, System.StringSplitOptions.RemoveEmptyEntries);
+            foreach (var sentence in sentences)
+            {
+                string trimmed = sentence.Trim();
+                if (!string.IsNullOrEmpty(trimmed))
+                    pages.Add(trimmed + ".");
+            }
+        }
+        else if (paginationMode == PaginationMode.ByNewLine)
+        {
+            string[] lines = longText.Split(new[] { '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+            foreach (var line in lines)
+            {
+                string trimmed = line.Trim();
+                if (!string.IsNullOrEmpty(trimmed))
+                    pages.Add(trimmed);
+            }
         }
     }
 

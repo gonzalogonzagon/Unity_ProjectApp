@@ -24,6 +24,8 @@ public class ShowInfoOnClick : MonoBehaviour, IInteractable
         // Mueve el objeto 2 a la posición X,Z del objeto 1 (este script)
         if (objectToMove != null)
         {
+            objectToMove.gameObject.SetActive(true);
+            objectToMove2.gameObject.SetActive(true);
             Vector3 newPos = objectToMove.position;
             newPos.x = transform.position.x;
             newPos.y = objectToMove.position.y;

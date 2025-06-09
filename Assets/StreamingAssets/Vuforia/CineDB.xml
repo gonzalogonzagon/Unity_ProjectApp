@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="Entrada_Restaurante_Target_4" size="4.000000 3.113658" />
     <ImageTarget name="h1" size="14.000000 14.389544" />
     <ImageTarget name="Entrada_Restaurante_Target2" size="4.000000 1.695279" />
     <ImageTarget name="Entrada_Restaurante_Target" size="4.000000 2.181818" />

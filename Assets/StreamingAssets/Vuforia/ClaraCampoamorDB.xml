@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="clara_front_cloudy2" size="0.800000 2.628468" />
+    <ImageTarget name="clara_back_cloudy" size="0.900000 2.338513" />
+    <ImageTarget name="clara_front_cloudy" size="0.800000 2.624376" />
     <ImageTarget name="clara_front_shadow" size="0.800000 1.926009" />
     <ImageTarget name="clara_back_shadow" size="0.800000 2.178238" />
     <ImageTarget name="clara_back" size="0.800000 1.574366" />
