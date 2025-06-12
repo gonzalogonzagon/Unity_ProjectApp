@@ -45,7 +45,7 @@ public class ShowInfoOnClick : MonoBehaviour, IInteractable
         // Asigna el texto al InfoMarker1
         if (infoMarker != null)
         {
-            infoMarker.infoDescription = infoText;
+            infoMarker.setInfoDescription(infoText);
         }
     }
 

@@ -1,89 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InfoMarker1 : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    private GameObject canvasModalText; // Referencia al canvas que se mostrará al interactuar
+    [SerializeField] private TMP_Text titleField;       // Campo para el título
+    [SerializeField] private TMP_Text descriptionField; // Campo para la descripción
+    [SerializeField] private string infoTitle = "Información";
+    [SerializeField] private string infoDescription = "Este es un punto de interés.";
+    [SerializeField] private GameObject canvasToShow;
 
-    [SerializeField]
-    private GameObject canvasModalText2; // Referencia al segundo canvas que se mostrará al interactuar (opcional)
-    
-    [SerializeField]
-    private string infoTitle = "Información"; // Título que se mostrará en el canvas
-    
-    [SerializeField]
-    public string infoDescription = "Este es un punto de interés."; // Descripción a mostrar
-    
-    private bool isInteractable = true; // Determina si el marcador puede ser interactuado
-
-    private void Start()
-    {
-        // Si no se asigna el canvas en el inspector, intentamos encontrarlo por tag o nombre
-        if (canvasModalText == null)
-        {
-            // Primero buscamos por tag
-            canvasModalText = GameObject.FindWithTag("CanvasModalText");
-            
-            // Si no lo encontramos por tag, buscamos por nombre
-            if (canvasModalText == null)
-            {
-                canvasModalText = GameObject.Find("CanvasModal1");
-                
-                if (canvasModalText == null)
-                {
-                    Debug.LogWarning("No se ha asignado un canvas modal al InfoMarker1. Por favor asigna uno en el inspector.");
-                }
-            }
-        }
-        
-        // Aseguramos que el canvas esté oculto al inicio
-        if (canvasModalText != null)
-        {
-            canvasModalText.SetActive(false);
-        }
-    }
-
-    // Método de la interfaz IInteractable que se llama cuando el usuario interactúa con este objeto
     public void Interact()
     {
-        if (canvasModalText != null)
-        {
-            // Activamos el canvas modal
-            canvasModalText.SetActive(true);
+        if (canvasToShow != null)
+            canvasToShow.SetActive(true);
             
-            // Si el canvas tiene componentes para mostrar título y descripción, los configuramos
-            TMPro.TextMeshProUGUI[] textComponents = canvasModalText2.GetComponentsInChildren<TMPro.TextMeshProUGUI>();
-            foreach (TMPro.TextMeshProUGUI textComponent in textComponents)
-            {
-                if (textComponent.name.Contains("Title"))
-                {
-                    textComponent.text = infoTitle;
-                }
-                else if (textComponent.name.Contains("Description") || textComponent.name.Contains("Content"))
-                {
-                    textComponent.text = infoDescription;
-                }
-            }
-            
-            Debug.Log("InfoMarker activado: Mostrando información");
-        }
+        if (titleField != null)
+            titleField.text = infoTitle;
         else
-        {
-            Debug.LogError("No hay un canvas modal asignado al InfoMarker1");
-        }
+            Debug.LogWarning("No se ha asignado el campo de título a InfoMarker1.");
+
+        if (descriptionField != null)
+            descriptionField.text = infoDescription;
+        else
+            Debug.LogWarning("No se ha asignado el campo de descripción a InfoMarker1.");
     }
 
-    // Método de la interfaz IInteractable para verificar si se puede interactuar con el objeto
     public bool CanInteract()
     {
-        return isInteractable;
+        return true;
     }
-    
-    // Método para habilitar o deshabilitar la interacción
-    public void SetInteractable(bool value)
+
+    public string getInfoDescription()
     {
-        isInteractable = value;
+        return infoDescription;
+    }
+    public void setInfoDescription(string description)
+    {
+        infoDescription = description;
+        if (descriptionField != null)
+            descriptionField.text = infoDescription;
     }
 }

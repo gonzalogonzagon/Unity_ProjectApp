@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="atocha_target3" size="32.000000 22.242817" />
+    <ImageTarget name="Atocha_target2" size="32.000000 22.074867" />
+    <ImageTarget name="Atocha_target1" size="32.000000 21.872053" />
+    <ImageTarget name="Sol_Target3" size="13.500000 20.314903" />
+    <ImageTarget name="puertaAlcala_target4" size="12.000000 10.241187" />
+    <ImageTarget name="puertaAlcala_target3" size="14.000000 12.337349" />
     <ImageTarget name="puertaAlcala_target2" size="13.000000 11.066021" />
     <ImageTarget name="Sol_Target2" size="13.500000 13.766949" />
     <ImageTarget name="Escudo_EntradaPalacio_Target" size="2.000000 2.091993" />

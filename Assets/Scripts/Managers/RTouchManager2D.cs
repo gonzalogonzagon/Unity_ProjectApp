@@ -257,4 +257,13 @@ public class RTouchManager2D : MonoBehaviour
         }
     }
 
+    public void SetTargetContent(Transform newTarget, float minScale, float maxScale)
+    {
+        this.minScale = minScale;
+        this.maxScale = maxScale;
+
+        // Actualiza el target y escala
+        SetTargetContent(newTarget);
+    }
+
 }
