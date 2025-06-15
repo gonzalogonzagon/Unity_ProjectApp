@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 42431767}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.4347825, y: 1.6521739, z: -1.0869565}
+  m_LocalPosition: {x: -2.4347825, y: -6.87, z: -1.0869565}
   m_LocalScale: {x: 1.4782609, y: 1.4782609, z: 1.4782609}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -338,6 +338,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &85257156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 1316531038}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &160318694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -720,37 +725,6 @@ Transform:
   - {fileID: 1423145969}
   m_Father: {fileID: 1397541737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &418399317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 418399318}
-  m_Layer: 0
-  m_Name: ContentClaraRight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &418399318
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418399317}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1610214114}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &486959770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1061,37 +1035,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7662903906562177575, guid: bd7020419b271d149ad7b13ae43ef3f1, type: 3}
   m_PrefabInstance: {fileID: 587209174}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &589872973
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 589872974}
-  m_Layer: 0
-  m_Name: ContentClaraBack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &589872974
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589872973}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1610214114}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606129547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7103998939349690032, guid: c601f8a28a6067b45b5e2dc461e3b7dd, type: 3}
@@ -1168,7 +1111,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 712239218}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!4 &660758059 stripped
 Transform:
@@ -1199,6 +1145,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7103998939349690032, guid: c601f8a28a6067b45b5e2dc461e3b7dd, type: 3}
   m_PrefabInstance: {fileID: 1593455529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &712239215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 660758058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &712239218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712239215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 1507489372}
+  infoDescription: "Por primera vez en la historia de Espa\xF1a, en las elecciones
+    generales de 1933, las mujeres acudieron a las urnas. "
+  canvasToShow: {fileID: 1507489371}
 --- !u!1 &732849736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,11 +1223,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.382353
+      value: -2.54
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1176472
+      value: 8.31
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1301,7 +1268,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 972418200}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!4 &742949298 stripped
 Transform:
@@ -1313,37 +1283,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 1830128093}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &759964265
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 759964266}
-  m_Layer: 0
-  m_Name: ContentClaraFront
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &759964266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759964265}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1610214114}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785711902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,6 +1497,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1808206004}
   hideObject: 0
+--- !u!1001 &833489175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1739928994}
+    m_Modifications:
+    - target: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_Name
+      value: TextMClaraDiscurso
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.09649992
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853344292}
+  m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+--- !u!4 &833489176 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 833489175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &841880792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1740,6 +1756,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
   m_PrefabInstance: {fileID: 867890331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &972418197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 742949297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &972418200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972418197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15628c87f2fa3c4284f1e17f17886a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 1147713542}
+  infoDescription: "Me llamo Clara Campoamor y nac\xED en Madrid en 1888, en una
+    familia humilde. Perd\xED a mi padre siendo ni\xF1a y trabaj\xE9 desde muy joven
+    como modista, dependienta y telefonista para ayudar en casa.\r\nCon esfuerzo,
+    logr\xE9 obtener una plaza en Tel\xE9grafos, y m\xE1s tarde, a los 26 a\xF1os,
+    me convert\xED en profesora de mecanograf\xEDa.\r\n Fue entonces cuando descubr\xED
+    los c\xEDrculos intelectuales de Madrid y conoc\xED a muchas mujeres que sufr\xEDan
+    enormes injusticias por el hecho de ser mujeres.\r\nA los 36 a\xF1os consegu\xED
+    licenciarme en Derecho, convirti\xE9ndome en una de las primeras abogadas de
+    Espa\xF1a. Pronto ejerc\xED mi profesi\xF3n y fui la primera mujer en hablar
+    ante el Congreso de los Diputados y en defender un caso ante el Tribunal Supremo."
+  canvasToShow: {fileID: 1364686192}
+  modalTextPages: {fileID: 1364686193}
 --- !u!1001 &1001617669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1825,37 +1871,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2644365364744683168, guid: 719493d45544b744395768acffa07007, type: 3}
   m_PrefabInstance: {fileID: 1001617669}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1039301076
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1039301077}
-  m_Layer: 0
-  m_Name: ContentClaraLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1039301077
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039301076}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1610214114}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1041606942 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6312774646296593823, guid: 719493d45544b744395768acffa07007, type: 3}
@@ -2120,6 +2135,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147713542 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9136132994577779724, guid: c312efe8ca89e11458acbe74c86d9ae7, type: 3}
+  m_PrefabInstance: {fileID: 1364686191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253820201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,11 +2420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6610172
+      value: -3.35
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6843224
+      value: 6.48
       objectReference: {fileID: 0}
     - target: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2439,13 +2465,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1316531042}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!4 &1316531039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 1316531038}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1316531042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85257156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15628c87f2fa3c4284f1e17f17886a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 1147713542}
+  infoDescription: "Tras aquellas luchas llegaron tiempos dif\xEDciles. Durante la
+    Guerra Civil tuve que exiliarme para salvar mi vida. Viv\xED en Suiza, en Argentina
+    y de nuevo en Suiza, donde trabaj\xE9 como traductora, escritora y abogada.\r\nDesde
+    el exilio segu\xED defendiendo los derechos de la mujer y escrib\xED sobre mi
+    experiencia pol\xEDtica. Espa\xF1a no me permiti\xF3 volver en vida, pero mis
+    cenizas descansan hoy en San Sebasti\xE1n. Lo que s\xED puedo decir con orgullo
+    es que mi \"pecado mortal\" \u2014como titul\xE9 mis memorias\u2014 fue luchar
+    por la igualdad. Y nunca me arrepent\xED de ello."
+  canvasToShow: {fileID: 1364686192}
+  modalTextPages: {fileID: 1364686193}
 --- !u!1001 &1335831319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2791,6 +2843,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1984525023172499115, guid: c312efe8ca89e11458acbe74c86d9ae7, type: 3}
   m_PrefabInstance: {fileID: 1364686191}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364686193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 584827160120129661, guid: c312efe8ca89e11458acbe74c86d9ae7, type: 3}
+  m_PrefabInstance: {fileID: 1364686191}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364686192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42a606c79010f0846a4be2ddfbe70c9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397541735
 GameObject:
   m_ObjectHideFlags: 0
@@ -3042,6 +3105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5759723659696202620, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.680054
+      objectReference: {fileID: 0}
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3087,6 +3154,123 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37a344b404b19c84aa24e80d68b1e67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1507489370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 716395407746708333, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_Name
+      value: CanvasModalText Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 716395407746708333, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493493318228666273, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+--- !u!1 &1507489371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 716395407746708333, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+  m_PrefabInstance: {fileID: 1507489370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1507489372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3371592940233996605, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+  m_PrefabInstance: {fileID: 1507489370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1593455529
@@ -3291,41 +3475,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1610214113
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1610214114}
-  m_Layer: 0
-  m_Name: Content
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1610214114
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610214113}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5075984, y: 1.8468994, z: -10.832405}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 759964266}
-  - {fileID: 1039301077}
-  - {fileID: 418399318}
-  - {fileID: 589872974}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1630005714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3564,6 +3713,7 @@ Transform:
   - {fileID: 1756083094}
   - {fileID: 758463646}
   - {fileID: 8841870380710874615}
+  - {fileID: 833489176}
   m_Father: {fileID: 1313633857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1756083094 stripped
@@ -3921,14 +4071,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1830128098}
+      addedObject: {fileID: 1830128101}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!1 &1830128094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 1830128093}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1830128098
+--- !u!114 &1830128101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3937,11 +4087,132 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830128094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44c89db237d1c04095e22108a715d77, type: 3}
+  m_Script: {fileID: 11500000, guid: e15628c87f2fa3c4284f1e17f17886a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1364686192}
-  hideObject: 0
+  descriptionField: {fileID: 1147713542}
+  infoDescription: "Se\xF1ores diputados: lejos yo de censurar ni de atacar las manifestaciones
+    de mi colega, se\xF1orita Kent, comprendo, por el contrario, la tortura de su
+    esp\xEDritu al haberse visto hoy en trance de negar la capacidad inicial de la
+    mujer. Creo que por su pensamiento ha debido de pasar, en alguna forma, la amarga
+    frase de Anatole France cuando nos habla de aquellos socialistas que, forzados
+    por la necesidad, iban al Parlamento a legislar contra los suyos.\r\nRespecto
+    a la serie de afirmaciones que se han hecho esta tarde contra el voto de la mujer,
+    he de decir, con toda la consideraci\xF3n necesaria, que no est\xE1n apoyadas
+    en la realidad. Tomemos al azar algunas de ellas. \xBFQue cu\xE1ndo las mujeres
+    se han levantado para protestar de la guerra de Marruecos? Primero: \xBFy por
+    qu\xE9 no los hombres? \r\nSegundo: \xBFqui\xE9n protest\xF3 y se levant\xF3
+    en Zaragoza cuando la guerra de Cuba m\xE1s que las mujeres? \xBFQui\xE9n nutri\xF3
+    la manifestaci\xF3n pro responsabilidades del Ateneo, con motivo del desastre
+    de Annual, m\xE1s que las mujeres, que iban en mayor n\xFAmero que los hombres?\r\n\xA1Las
+    mujeres! \xBFC\xF3mo puede decirse que cuando las mujeres den se\xF1ales de vida
+    por la Rep\xFAblica se les conceder\xE1 como premio el derecho a votar? \xBFEs
+    que no han luchado las mujeres por la Rep\xFAblica? \xBFEs que al hablar con
+    elogio de las mujeres obreras y de las mujeres universitarias no est\xE1 cantando
+    su capacidad?\r\nAdem\xE1s, al hablar de las mujeres obreras y universitarias,
+    \xBFse va a ignorar a todas las que no pertenecen a una clase ni a la otra? \xBFNo
+    sufren \xE9stas las consecuencias de la legislaci\xF3n? \xBFNo pagan los impuestos
+    para sostener al Estado en la misma forma que las otras y que los varones? \r\n\xBFNo
+    refluye sobre ellas toda la consecuencia de la legislaci\xF3n que se elabora
+    aqu\xED para los dos sexos, pero solamente dirigida y matizada por uno? \xBFC\xF3mo
+    puede decirse que la mujer no ha luchado y que necesita una \xE9poca, largos
+    a\xF1os de Rep\xFAblica, para demostrar su capacidad? Y \xBFpor qu\xE9 no los
+    hombres? \xBFPor qu\xE9 el hombre, al advenimiento de la Rep\xFAblica, ha de
+    tener sus derechos y han de ponerse en un lazareto los de la mujer?\r\nPero,
+    adem\xE1s, se\xF1ores diputados, los que votasteis por la Rep\xFAblica, y a quienes
+    os votaron los republicanos, meditad un momento y decid si hab\xE9is votado solos,
+    si os votaron s\xF3lo los hombres. \xBFHa estado ausente del voto la mujer? \r\nPues
+    entonces, si afirm\xE1is que la mujer no influye para nada en la vida pol\xEDtica
+    del hombre, est\xE1is -fijaos bien- afirmando su personalidad, afirmando la resistencia
+    a acatarlos. \xBFY es en nombre de esa personalidad, que con vuestra repulsa
+    reconoc\xE9is y declar\xE1is, por lo que cerr\xE1is las puertas a la mujer en
+    materia electoral? \r\n\xBFEs que ten\xE9is derecho a hacer eso? No; ten\xE9is
+    el derecho que os ha dado la ley, la ley que hicisteis vosotros, pero no ten\xE9is
+    el derecho natural fundamental, que se basa en el respeto a todo ser humano,
+    y lo que hac\xE9is es detentar un poder; dejad que la mujer se manifieste y ver\xE9is
+    como ese poder no pod\xE9is seguir detent\xE1ndolo.\r\nNo se trata aqu\xED esta
+    cuesti\xF3n desde el punto de vista del principio, que harto claro est\xE1, y
+    en vuestras conciencias repercute, que es un problema de \xE9tica, de pura \xE9tica
+    reconocer a la mujer, ser humano, todos sus derechos, \r\nporque ya desde Fitche,
+    en 1796, se ha aceptado, en principio tambi\xE9n, el postulado de que s\xF3lo
+    aquel que no considere a la mujer un ser humano es capaz de afirmar que todos
+    los derechos del hombre y del ciudadano no deben ser los mismos para la mujer
+    que para el hombre. \r\nY en el Parlamento franc\xE9s, en 1848, Victor Considerant
+    se levant\xF3 para decir que una Constituci\xF3n que concede el voto al mendigo,
+    al dom\xE9stico y al analfabeto -que en Espa\xF1a existe- no puede neg\xE1rselo
+    a la mujer. No es desde el punto de vista del principio, es desde el temor que
+    aqu\xED se ha expuesto, fuera del \xE1mbito del principio -cosa dolorosa para
+    un abogado-,\r\n como se puede venir a discutir el derecho de la mujer a que
+    sea reconocido en la Constituci\xF3n el de sufragio. Y desde el punto de vista
+    pr\xE1ctico, utilitario, \xBFde qu\xE9 acus\xE1is a la mujer? \xBFEs de ignorancia?
+    Pues yo no puedo, por enojosas que sean las estad\xEDsticas, dejar de referirme
+    a un estudio del se\xF1or Luzuriaga acerca del analfabetismo en Espa\xF1a.\r\nHace
+    \xE9l un estudio c\xEDclico desde 1868 hasta el a\xF1o 1910, nada m\xE1s, porque
+    las estad\xEDsticas van muy lentamente y no hay en Espa\xF1a otras. \xBFY sab\xE9is
+    lo que dice esa estad\xEDstica? Pues dice que, tomando los n\xFAmeros globales
+    en el ciclo de 1860 a 1910, se observa que mientras el n\xFAmero total de analfabetos
+    varones, lejos de disminuir, ha aumentado en 73.082, el de la mujer analfabeta
+    ha disminuido en 48.098;\r\ny refiri\xE9ndose a la proporcionalidad del analfabetismo
+    en la poblaci\xF3n global, la disminuci\xF3n en los varones es s\xF3lo de 12,7
+    por cien, en tanto que en las hembras es del 20,2 por cien. \r\nEsto quiere decir
+    simplemente que la disminuci\xF3n del analfabetismo es m\xE1s r\xE1pida en las
+    mujeres que en los hombres y que de continuar ese proceso de disminuci\xF3n en
+    los dos sexos, no s\xF3lo llegar\xE1n a alcanzar las mujeres el grado de cultura
+    elemental de los hombres, sino que lo sobrepasar\xE1n. \r\nEso en 1910. Y desde
+    1910 ha seguido la curva ascendente, y la mujer, hoy d\xEDa, es menos analfabeta
+    que el var\xF3n. No es, pues, desde el punto de vista de la ignorancia desde
+    el que se puede negar a la mujer la entrada en la obtenci\xF3n de este derecho.\r\nOtra
+    cosa, adem\xE1s, al var\xF3n que ha de votar. No olvid\xE9is que no sois hijos
+    de var\xF3n tan s\xF3lo, sino que se re\xFAne en vosotros el producto de los
+    dos sexos. En ausencia m\xEDa y leyendo el diario de sesiones, pude ver en \xE9l
+    que un doctor hablaba aqu\xED de que no hab\xEDa ecuaci\xF3n posible y, con esp\xEDritu
+    heredado de Moebius y Arist\xF3teles, declaraba la incapacidad de la mujer.\r\nA
+    eso, un solo argumento: aunque no quer\xE1is y si por acaso admit\xEDs la incapacidad
+    femenina, vot\xE1is con la mitad de vuestro ser incapaz. Yo y todas las mujeres
+    a quienes represento queremos votar con nuestra mitad masculina, porque no hay
+    degeneraci\xF3n de sexos, porque todos somos hijos de hombre y mujer y recibimos
+    por igual las dos partes de nuestro ser, argumento que han desarrollado los bi\xF3logos.
+    Somos producto de dos seres; no hay incapacidad posible de vosotros a m\xED,
+    ni de m\xED a vosotros.\r\nDesconocer esto es negar la realidad evidente. Negadlo
+    si quer\xE9is; sois libres de ello, pero s\xF3lo en virtud de un derecho que
+    hab\xE9is (perdonadme la palabra, que digo s\xF3lo por su claridad y no con esp\xEDritu
+    agresivo) detentado, porque os disteis a vosotros mismos las leyes; pero no porque
+    teng\xE1is un derecho natural para poner al margen a la mujer.\r\nYo, se\xF1ores
+    diputados, me siento ciudadano antes que mujer, y considero que ser\xEDa un profundo
+    error pol\xEDtico dejar a la mujer al margen de ese derecho, a la mujer que espera
+    y conf\xEDa en vosotros; a la mujer que, como ocurri\xF3 con otras fuerzas nuevas
+    en la revoluci\xF3n francesa, ser\xE1 indiscutiblemente una nueva fuerza que
+    se incorpora al derecho y no hay sino que empujarla a que siga su camino.\r\nNo
+    dej\xE9is a la mujer que, si es regresiva, piense que su esperanza estuvo en
+    la dictadura; no dej\xE9is a la mujer que piense, si es avanzada, que su esperanza
+    de igualdad est\xE1 en el comunismo. No comet\xE1is, se\xF1ores diputados, ese
+    error pol\xEDtico de grav\xEDsimas consecuencias. Salv\xE1is a la Rep\xFAblica,
+    ayud\xE1is a la Rep\xFAblica atray\xE9ndoos y sum\xE1ndoos esa fuerza que espera
+    ansiosa el momento de su redenci\xF3n.\r\nCada uno habla en virtud de una experiencia
+    y yo os hablo en nombre de la m\xEDa propia. Yo soy diputado por la provincia
+    de Madrid; la he recorrido, no s\xF3lo en cumplimiento de mi deber, sino por
+    cari\xF1o, y muchas veces, siempre, he visto que a los actos p\xFAblicos acud\xEDa
+    una concurrencia femenina muy superior a la masculina,\r\ny he visto en los ojos
+    de esas mujeres la esperanza de redenci\xF3n, he visto el deseo de ayudar a la
+    Rep\xFAblica, he visto la pasi\xF3n y la emoci\xF3n que ponen en sus ideales.
+    La mujer espa\xF1ola espera hoy de la Rep\xFAblica la redenci\xF3n suya y la
+    redenci\xF3n del hijo. \r\nNo comet\xE1is un error hist\xF3rico que no tendr\xE9is
+    nunca bastante tiempo para llorar; que no tendr\xE9is nunca bastante tiempo para
+    llorar al dejar al margen de la Rep\xFAblica a la mujer, que representa una fuerza
+    nueva, una fuerza joven; que ha sido simpat\xEDa y apoyo para los hombres que
+    estaban en las c\xE1rceles; \r\nque ha sufrido en muchos casos como vosotros
+    mismos, y que est\xE1 anhelante, aplic\xE1ndose a s\xED misma la frase de Humboldt
+    de que la \xFAnica manera de madurarse para el ejercicio de la libertad y de
+    hacerla accesible a todos es caminar dentro de ella.\r\nSe\xF1ores diputados,
+    he pronunciado mis \xFAltimas palabras en este debate. Perdonadme si os molest\xE9,
+    considero que es mi convicci\xF3n la que habla; que ante un ideal lo defender\xEDa
+    hasta la muerte; que pondr\xEDa, como dije ayer, la cabeza y el coraz\xF3n en
+    el platillo de la balanza, de igual modo Breno coloc\xF3 su espada, para que
+    se inclinara en favor del voto de la mujer, \r\ny que adem\xE1s sigo pensando,
+    y no por vanidad, sino por \xEDntima convicci\xF3n, que nadie como yo sirve en
+    estos momentos a la Rep\xFAblica espa\xF1ola."
+  canvasToShow: {fileID: 1364686192}
+  modalTextPages: {fileID: 1364686193}
 --- !u!1 &1835656869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,6 +4319,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1853344289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 833489175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1853344292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853344289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15628c87f2fa3c4284f1e17f17886a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 1147713542}
+  infoDescription: "Aquel 1 de octubre de 1931 jam\xE1s lo olvidar\xE9. Ante las
+    Cortes, defend\xED con firmeza el derecho de todas las mujeres a votar. Muchos
+    pensaban que no est\xE1bamos preparadas, que votar\xEDamos bajo la influencia
+    de la Iglesia o de nuestros maridos. \r\nYo respond\xED con una simple verdad:
+    \u201CLa mujer necesita la igualdad para ser libre\u201D.\r\nNo fue f\xE1cil:
+    incluso compa\xF1eras como Victoria Kent se opusieron. Pero logr\xE9 que se aprobara
+    el art\xEDculo 36 de nuestra Constituci\xF3n. Aquella fue una victoria para todas
+    las espa\xF1olas. \r\nTambi\xE9n particip\xE9 en la redacci\xF3n de leyes que
+    reconocieron la igualdad de hijos nacidos dentro y fuera del matrimonio, y defend\xED
+    el divorcio como derecho fundamental. Cada paso que dimos fue un paso hacia la
+    dignidad y la justicia."
+  canvasToShow: {fileID: 1364686192}
+  modalTextPages: {fileID: 1364686193}
 --- !u!1 &1859703755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4074,7 +4376,7 @@ Transform:
   m_GameObject: {fileID: 1859703755}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33, y: 9.77, z: -1.25}
+  m_LocalPosition: {x: -0.33, y: -2.97, z: -1.25}
   m_LocalScale: {x: 2.36, y: 2.36, z: 2.36}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4766,13 +5068,13 @@ SceneRoots:
   - {fileID: 1471107946}
   - {fileID: 1630005714}
   - {fileID: 732849738}
-  - {fileID: 1610214114}
   - {fileID: 1313633857}
   - {fileID: 806632396}
   - {fileID: 1397541737}
   - {fileID: 162631551}
   - {fileID: 1808206003}
   - {fileID: 1364686191}
+  - {fileID: 1507489370}
   - {fileID: 1790474242}
   - {fileID: 374125454}
   - {fileID: 1043077074}

@@ -217,7 +217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fce00424aa5bc4d82fc7070431f579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagePanel: {fileID: 0}
+  canvasImagePanel: {fileID: 0}
+  canvasImageDisplay: {fileID: 0}
+  imageAsset: {fileID: 0}
 --- !u!65 &923261533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -628,7 +630,7 @@ SpriteRenderer:
   m_Size: {x: 9, y: 13.49}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1162644849
@@ -658,7 +660,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fce00424aa5bc4d82fc7070431f579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagePanel: {fileID: 0}
+  canvasImagePanel: {fileID: 0}
+  canvasImageDisplay: {fileID: 0}
+  imageAsset: {fileID: 0}
 --- !u!65 &1162644851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -877,7 +881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fce00424aa5bc4d82fc7070431f579, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagePanel: {fileID: 0}
+  canvasImagePanel: {fileID: 0}
+  canvasImageDisplay: {fileID: 0}
+  imageAsset: {fileID: 0}
 --- !u!65 &1194774034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -948,7 +954,7 @@ SpriteRenderer:
   m_Size: {x: 9, y: 13.49}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1194774036

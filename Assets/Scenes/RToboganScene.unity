@@ -967,6 +967,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+--- !u!114 &758099670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3371592940233996605, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+  m_PrefabInstance: {fileID: 758099669}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &802789873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,15 +1320,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 964555027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 1203400995}
-  canvasModalText2: {fileID: 1485354037}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 758099670}
   infoDescription: "Cada viaje costaba 15 c\xE9ntimos, el precio de un peri\xF3dico
     m\xE1s o menos, aunque siempre pod\xEDas adquirir un bono de 10 viajes por una
     peseta."
+  canvasToShow: {fileID: 1203400995}
 --- !u!1 &972587549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,11 +1835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 972587549}
   hideObject: 1
---- !u!1 &1485354037 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2736110513298594179, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
-  m_PrefabInstance: {fileID: 758099669}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1507097327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2242,14 +2247,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1795112147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 1203400995}
-  canvasModalText2: {fileID: 1485354037}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 758099670}
   infoDescription: "En primer plano, se observa un grupo de personas caminando por
     la plaza empedrada, lo que nos da una idea del ambiente cotidiano de la \xE9poca."
+  canvasToShow: {fileID: 1203400995}
 --- !u!1 &1868235678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,8 +2265,8 @@ GameObject:
   - component: {fileID: 1868235683}
   - component: {fileID: 1868235682}
   - component: {fileID: 1868235681}
-  - component: {fileID: 1868235680}
   - component: {fileID: 1868235679}
+  - component: {fileID: 1868235684}
   m_Layer: 6
   m_Name: ToboganInfo
   m_TagString: Untagged
@@ -2284,24 +2288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flipFace: 1
   useWorldUp: 0
---- !u!114 &1868235680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868235678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 1203400995}
-  canvasModalText2: {fileID: 1485354037}
-  infoTitle: "Informaci\xF3n"
-  infoDescription: "En esta postal promocional se pueden observar grupos de adultos
-    ascendiendo por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras
-    otros ya disfrutan del descenso por la pendiente."
 --- !u!65 &1868235681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2390,6 +2376,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 972587553}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1868235684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868235678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 758099670}
+  infoDescription: "En esta postal promocional se pueden observar grupos de adultos
+    ascendiendo por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras
+    otros ya disfrutan del descenso por la pendiente."
+  canvasToShow: {fileID: 1203400995}
 --- !u!1001 &1913694855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2485,14 +2488,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1913694857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 1203400995}
-  canvasModalText2: {fileID: 1485354037}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 758099670}
   infoDescription: "El transporte p\xFAblico de aquella \xE9poca, impulsado por electricidad,
     era un s\xEDmbolo de modernizaci\xF3n."
+  canvasToShow: {fileID: 1203400995}
 --- !u!1001 &1937616196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2855,7 +2857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasImagePanel: {fileID: 835185440}
   canvasImageDisplay: {fileID: 835185441}
-  imageAsset: {fileID: 21300000, guid: 717645c8848861842b33c1e8dc541ad6, type: 3}
+  imageAsset: {fileID: 21300000, guid: e125014826e1cb240a89b5cea7300fcd, type: 3}
   key: Calle
   spriteRenderer: {fileID: 0}
 --- !u!1001 &2077447591

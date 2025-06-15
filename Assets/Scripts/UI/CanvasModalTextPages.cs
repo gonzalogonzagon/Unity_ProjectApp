@@ -31,7 +31,7 @@ public class CanvasModalTextPages : MonoBehaviour
         buttonBack.onClick.AddListener(PreviousPage);
     }
 
-    void PaginateText()
+    public void PaginateText()
     {
         pages.Clear();
         if (paginationMode == PaginationMode.ByPeriod)
@@ -56,7 +56,7 @@ public class CanvasModalTextPages : MonoBehaviour
         }
     }
 
-    void ShowPage(int page)
+    public void ShowPage(int page)
     {
         if (pages.Count == 0) return;
         textPanel.text = pages[page];

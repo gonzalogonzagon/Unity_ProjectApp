@@ -2068,6 +2068,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1098816825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 1378690498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1114253088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,8 +2363,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleField: {fileID: 1070667457}
   descriptionField: {fileID: 1070667456}
-  infoTitle: "Informaci\xF3n"
-  infoDescription: "Este es un punto de inter\xE9s."
+  infoTitle: Garbancito de la mancha
+  infoDescription: "Se trata del primer largometraje de animaci\xF3n filmado en Europa. 
+    Jos\xE9 Mar\xEDa Blay y Arturo Moreno, 1945."
   canvasToShow: {fileID: 1568901180}
 --- !u!1001 &1378690498
 PrefabInstance:
@@ -2432,13 +2438,37 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1378690502}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!4 &1378690499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 1378690498}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1378690502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098816825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleField: {fileID: 1070667457}
+  descriptionField: {fileID: 1070667456}
+  infoTitle: "Exterior del Real Cinema (Plaza de \xD3pera)"
+  infoDescription: " Con su arquitectura modernista y detalles rococ\xF3, destacaba
+    especialmente su torre conocida como 'el faro', un s\xEDmbolo que recordaba a
+    los focos de cine cl\xE1sicos. Fue inaugurado en 1920 por Alfonso XIII en la
+    Plaza de \xD3pera, y lleg\xF3 a ser el mayor cine de la capital, con capacidad
+    para m\xE1s de 1,000 espectadores y una terraza a\xF1adida para cine de verano."
+  canvasToShow: {fileID: 1568901180}
 --- !u!1 &1424766568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,8 +2681,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleField: {fileID: 1070667457}
   descriptionField: {fileID: 1070667456}
-  infoTitle: "Informaci\xF3n"
-  infoDescription: "Este es un punto de inter\xE9s."
+  infoTitle: El misterio de la Puerta del Sol
+  infoDescription: "Primer largometraje parcialmente sonoro de la historia del cine
+    espa\xF1ol. (Francisco El\xEDas, 1930)"
   canvasToShow: {fileID: 1568901180}
 --- !u!1001 &1505057321
 PrefabInstance:
@@ -3705,8 +3736,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleField: {fileID: 1070667457}
   descriptionField: {fileID: 1070667456}
-  infoTitle: "Informaci\xF3n"
-  infoDescription: "Este es un punto de inter\xE9s."
+  infoTitle: Salida de misa de doce del Pilar de Zaragoza
+  infoDescription: "Filmaci\xF3n, realizada a finales del siglo XIX por el aragon\xE9s
+    Eduardo Jimeno, siendo una de las primeras pel\xEDculas rodadas en Espa\xF1a.
+    Muestra a los feligreses saliendo de misa en la Bas\xEDlica del Pilar de Zaragoza,
+    siguiendo el estilo de las primeras grabaciones de los hermanos Lumi\xE8re en
+    Par\xEDs, pioneros del cine. Aunque su lugar como la primera pel\xEDcula espa\xF1ola
+    ha sido objeto de debate y revisiones hist\xF3ricas, Jimeno es reconocido como
+    uno de los pioneros que sentaron las bases del cine en Espa\xF1a."
   canvasToShow: {fileID: 1568901180}
 --- !u!1001 &2086377870
 PrefabInstance:

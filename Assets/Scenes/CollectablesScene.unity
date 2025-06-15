@@ -219,6 +219,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6804c24f312d014d982964cd67ab5cb, type: 3}
+--- !u!1 &186852558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5601410413367600616, guid: d6804c24f312d014d982964cd67ab5cb, type: 3}
+  m_PrefabInstance: {fileID: 186852557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &219848377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,6 +325,130 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 2424363195904012441, guid: 2c8ceadd261219545bc13f277b3efaee, type: 3}
   m_PrefabInstance: {fileID: 1706926896}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &320863495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 320863499}
+  - component: {fileID: 320863498}
+  - component: {fileID: 320863497}
+  - component: {fileID: 320863496}
+  m_Layer: 0
+  m_Name: TargetAtocha1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &320863496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320863495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 320863498}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Atocha_target1
+  mDatasetName: Vuforia/CollectablesDB.xml
+  mCastedBehaviour: {fileID: 320863498}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &320863497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320863495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 1
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &320863498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320863495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Atocha_target1
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CollectablesDB.xml
+  mAspectRatio: 0.68350166
+  mImageTargetType: 0
+  mWidth: 32
+  mHeight: 21.872053
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 320863496}
+--- !u!4 &320863499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320863495}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.56, y: 2.2, z: 14.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &384305862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1550142387119067697, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
@@ -791,6 +920,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &676135128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1550142387119067697, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_Name
+      value: HintMarkerAtocha
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872448016572168257, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: canvasImagePanel
+      value: 
+      objectReference: {fileID: 1936513315}
+    - target: {fileID: 1872448016572168257, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: canvasImageDisplay
+      value: 
+      objectReference: {fileID: 1342444687}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7397972833015965966, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1872448016572168257, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1550142387119067697, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 676135131}
+  m_SourcePrefab: {fileID: 100100000, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+--- !u!1 &676135129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1550142387119067697, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+  m_PrefabInstance: {fileID: 676135128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &676135130 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2532244462378109078, guid: f25a930ece9d6fc4f87fb0d205b0fffd, type: 3}
+  m_PrefabInstance: {fileID: 676135128}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &676135131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676135129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b97305e6e88839c4b9fbc4c31615aa9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasImagePanel: {fileID: 1936513315}
+  canvasImageDisplay: {fileID: 1342444687}
+  imageAsset: {fileID: 21300000, guid: 55d002df79f20604b844b0eac03c9bb8, type: 3}
+  key: Atocha
+  spriteRenderer: {fileID: 676135130}
 --- !u!1 &791660298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3788203850799955188, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
@@ -808,6 +1033,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69252a4d9a63f864fb776a3402f12c3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &791660304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791660298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44c89db237d1c04095e22108a715d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 186852558}
+  hideObject: 0
 --- !u!1001 &873646024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1163,6 +1402,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1055015880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1055015882}
+  - component: {fileID: 1055015881}
+  m_Layer: 0
+  m_Name: AtochaMultitarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1055015881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055015880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d23fbec56bae45e41ba76ecf7d36d28c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: {fileID: 0}
+  targets:
+  - {fileID: 320863498}
+  - {fileID: 1574709183}
+  - {fileID: 1351974871}
+--- !u!4 &1055015882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055015880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0716836, y: 0.8778818, z: 18.225956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1155725761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1270,18 +1558,18 @@ PrefabInstance:
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 791660303}
+      objectReference: {fileID: 791660304}
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DeleteAllPlayerPrefs
+      value: Interact
       objectReference: {fileID: 0}
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: CollectablesStateManager, Assembly-CSharp
+      value: ShowObject, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6724300669663454247, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1294,6 +1582,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3788203850799955188, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 791660303}
+    - targetCorrespondingSourceObject: {fileID: 3788203850799955188, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791660304}
   m_SourcePrefab: {fileID: 100100000, guid: 9f431509a7b7af845b91010cb7ef6ae3, type: 3}
 --- !u!114 &1237476041 stripped
 MonoBehaviour:
@@ -1317,6 +1608,130 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1351974868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351974872}
+  - component: {fileID: 1351974871}
+  - component: {fileID: 1351974870}
+  - component: {fileID: 1351974869}
+  m_Layer: 0
+  m_Name: TargetAtocha3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1351974869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351974868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1351974871}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: atocha_target3
+  mDatasetName: Vuforia/CollectablesDB.xml
+  mCastedBehaviour: {fileID: 1351974871}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1351974870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351974868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 1
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1351974871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351974868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: atocha_target3
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CollectablesDB.xml
+  mAspectRatio: 0.695088
+  mImageTargetType: 0
+  mWidth: 32
+  mHeight: 22.242817
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1351974869}
+--- !u!4 &1351974872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351974868}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.56, y: 3.47, z: 14.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1428758738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +2019,130 @@ MonoBehaviour:
   imageAsset: {fileID: 21300000, guid: 841e7c2801532984c97cc2da95a4e2a0, type: 3}
   key: Palacio
   spriteRenderer: {fileID: 1533341168}
+--- !u!1 &1574709180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574709184}
+  - component: {fileID: 1574709183}
+  - component: {fileID: 1574709182}
+  - component: {fileID: 1574709181}
+  m_Layer: 0
+  m_Name: TargetAtocha2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1574709181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574709180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1574709183}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: Atocha_target2
+  mDatasetName: Vuforia/CollectablesDB.xml
+  mCastedBehaviour: {fileID: 1574709183}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1574709182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574709180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 886328de6a5c14cbb85854fdf1a5085b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatusFilter: 1
+  UsePoseSmoothing: 0
+  AnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 3.3333333
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3
+      value: 1
+      inSlope: 3.3333333
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  OnTargetFound:
+    m_PersistentCalls:
+      m_Calls: []
+  OnTargetLost:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1574709183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574709180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PreviewVisible: 1
+  RuntimeOcclusion: 0
+  RuntimeCollider: 0
+  mTrackableName: Atocha_target2
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/CollectablesDB.xml
+  mAspectRatio: 0.6898396
+  mImageTargetType: 0
+  mWidth: 32
+  mHeight: 22.074867
+  mRuntimeTexture: {fileID: 0}
+  mMotionHint: 1
+  mTrackingOptimization: 0
+  mTrackingOptimizationNeedsUpgrade: 0
+  mPreview: {fileID: 1574709181}
+--- !u!4 &1574709184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574709180}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.86, y: 4.99, z: 14.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &1706926896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2572,6 +3111,7 @@ SceneRoots:
   - {fileID: 1155725761}
   - {fileID: 1428758740}
   - {fileID: 1041655848}
+  - {fileID: 1055015882}
   - {fileID: 1023775593}
   - {fileID: 889433506}
   - {fileID: 487756624}
@@ -2579,10 +3119,14 @@ SceneRoots:
   - {fileID: 612967882}
   - {fileID: 1760332860}
   - {fileID: 2053112635}
+  - {fileID: 320863499}
+  - {fileID: 1574709184}
+  - {fileID: 1351974872}
   - {fileID: 1484697765}
   - {fileID: 1827711856}
   - {fileID: 1706926896}
   - {fileID: 8037468685352156709}
   - {fileID: 186852557}
   - {fileID: 219848377}
+  - {fileID: 676135128}
   - {fileID: 9002586487993300613}

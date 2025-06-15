@@ -231,12 +231,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 78a572e0d306b884fac47e31c6f39d9b, type: 3}
   - {fileID: 21300000, guid: 4d3d980de9ae1e34ebfa758bdf0a5be8, type: 3}
   textPages:
-  - "Los iconos blancos representan una acci\xF3n en la escena. P\xFAlsalo para interactuar
-    con los objetos o activar alg\xFAn elemento de la escena."
+  - "Los iconos (i) indican una acci\xF3n interactiva en la escena. P\xFAlsalos para
+    activar elementos o descubrir m\xE1s detalles."
   - "Un icono de bocadillo muestra una vista. En este caso mostrar\xE1 la vista con
-    texto del objeto. Existen otras vistas para audio o animaciones."
+    texto del objeto. Existen otros iconos para audio o animaciones."
   - "Si una imagen es demasiado grande, al pulsar en ella se mostrar\xE1 una vista
-    con la imagen completa."
+    con la imagen completa. Tambi\xE9n pueden mostrar una leyenda."
   imagePanel: {fileID: 2072212739180284200}
   textPanel: {fileID: 2953331543552687951}
 --- !u!114 &6796635472424007517 stripped

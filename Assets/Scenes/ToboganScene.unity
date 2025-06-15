@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &11203788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3371592940233996605, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
+  m_PrefabInstance: {fileID: 9189733019804213668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &48642291
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,8 +144,8 @@ GameObject:
   - component: {fileID: 48642292}
   - component: {fileID: 48642294}
   - component: {fileID: 48642293}
-  - component: {fileID: 48642295}
   - component: {fileID: 48642296}
+  - component: {fileID: 48642297}
   m_Layer: 6
   m_Name: ToboganInfo
   m_TagString: Untagged
@@ -230,24 +241,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &48642295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48642291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 2107918628}
-  canvasModalText2: {fileID: 1284132262}
-  infoTitle: "Informaci\xF3n"
-  infoDescription: "En esta postal promocional se pueden observar grupos de adultos
-    ascendiendo por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras
-    otros ya disfrutan del descenso por la pendiente."
 --- !u!114 &48642296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +255,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flipFace: 1
   useWorldUp: 0
+--- !u!114 &48642297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48642291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionField: {fileID: 11203788}
+  infoDescription: "En esta postal promocional se pueden observar grupos de adultos
+    ascendiendo por las escaleras hasta la parte m\xE1s alta del tobog\xE1n, mientras
+    otros ya disfrutan del descenso por la pendiente."
+  canvasToShow: {fileID: 2107918628}
 --- !u!1 &80684302
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +410,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 616031435}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &149573367
+--- !u!4 &149573370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 616031435}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &149573373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -409,19 +424,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 149573366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 2107918628}
-  canvasModalText2: {fileID: 1284132262}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 11203788}
   infoDescription: "En primer plano, se observa un grupo de personas caminando por
     la plaza empedrada, lo que nos da una idea del ambiente cotidiano de la \xE9poca."
---- !u!4 &149573370 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
-  m_PrefabInstance: {fileID: 616031435}
-  m_PrefabAsset: {fileID: 0}
+  canvasToShow: {fileID: 2107918628}
 --- !u!1 &163070266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
@@ -432,7 +441,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 1621713935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &163070270
+--- !u!114 &163070273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,15 +450,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 163070266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 2107918628}
-  canvasModalText2: {fileID: 1284132262}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 11203788}
   infoDescription: "Cada viaje costaba 15 c\xE9ntimos, el precio de un peri\xF3dico
     m\xE1s o menos, aunque siempre pod\xEDas adquirir un bono de 10 viajes por una
     peseta."
+  canvasToShow: {fileID: 2107918628}
 --- !u!1001 &256921674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,7 +702,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1324788807}
+      addedObject: {fileID: 1324788813}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!1001 &382607344
 PrefabInstance:
@@ -1212,7 +1220,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 149573367}
+      addedObject: {fileID: 149573373}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!1 &676477101
 GameObject:
@@ -1816,7 +1824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasImagePanel: {fileID: 1065674881}
   canvasImageDisplay: {fileID: 1065674880}
-  imageAsset: {fileID: 21300000, guid: 717645c8848861842b33c1e8dc541ad6, type: 3}
+  imageAsset: {fileID: 21300000, guid: e125014826e1cb240a89b5cea7300fcd, type: 3}
   key: Calle
   spriteRenderer: {fileID: 0}
 --- !u!4 &805757146 stripped
@@ -2102,11 +2110,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1284132262 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2836508889995096917, guid: a1b8c0ff738e9dc4d9df74bbca03d1ee, type: 3}
-  m_PrefabInstance: {fileID: 9189733019804213668}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1289567508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,7 +2407,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
   m_PrefabInstance: {fileID: 360422293}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1324788807
+--- !u!4 &1324788810 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
+  m_PrefabInstance: {fileID: 360422293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1324788813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2413,19 +2421,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1324788806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa046168c57ebe4d9af09fafb0e6503, type: 3}
+  m_Script: {fileID: 11500000, guid: b695d6749fe0dba4b9ec82053973787b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvasModalText: {fileID: 2107918628}
-  canvasModalText2: {fileID: 1284132262}
-  infoTitle: "Informaci\xF3n"
+  descriptionField: {fileID: 11203788}
   infoDescription: "El transporte p\xFAblico de aquella \xE9poca, impulsado por electricidad,
     era un s\xEDmbolo de modernizaci\xF3n."
---- !u!4 &1324788810 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3465355645136746431, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
-  m_PrefabInstance: {fileID: 360422293}
-  m_PrefabAsset: {fileID: 0}
+  canvasToShow: {fileID: 2107918628}
 --- !u!1001 &1406797851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3044,7 +3046,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2229509970715157559, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 163070270}
+      addedObject: {fileID: 163070273}
   m_SourcePrefab: {fileID: 100100000, guid: e6c85e63c79155f43b257b9370e10902, type: 3}
 --- !u!1 &1663452869
 GameObject:

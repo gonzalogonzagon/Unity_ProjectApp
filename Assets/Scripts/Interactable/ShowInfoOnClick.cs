@@ -5,6 +5,7 @@ public class ShowInfoOnClick : MonoBehaviour, IInteractable
 {
     [Header("Datos a mostrar")]
     [SerializeField] private string playerPrefsKey;
+    [SerializeField] private string infoTitle;
     [SerializeField] private string infoText;
     [SerializeField] private Sprite infoImage;
 
@@ -12,13 +13,21 @@ public class ShowInfoOnClick : MonoBehaviour, IInteractable
     [SerializeField] private Transform objectToMove; // Objeto 2: el que se moverá
     [SerializeField] private Transform objectToMove2;
     [SerializeField] private Image uiImage; // Imagen UI donde mostrar la imagen
-    [SerializeField] private InfoMarker1 infoMarker; // Objeto con InfoMarker1
+    [SerializeField] private InfoMarker1 infoMarker;
+    [SerializeField] private GameObject warningCanvas; // Objeto con InfoMarker1
 
     private GameObject spawnedModal;
 
     public void Interact()
     {
-        if (string.IsNullOrEmpty(playerPrefsKey) || PlayerPrefs.GetInt(playerPrefsKey, 0) != 1)
+        if (string.IsNullOrEmpty(playerPrefsKey))
+        {
+            if (warningCanvas != null)
+                warningCanvas.SetActive(true);
+            return;
+        }
+
+        if (PlayerPrefs.GetInt(playerPrefsKey, 0) != 1)
             return;
 
         // Mueve el objeto 2 a la posición X,Z del objeto 1 (este script)
@@ -45,6 +54,7 @@ public class ShowInfoOnClick : MonoBehaviour, IInteractable
         // Asigna el texto al InfoMarker1
         if (infoMarker != null)
         {
+            infoMarker.setInfoTitle(infoTitle);
             infoMarker.setInfoDescription(infoText);
         }
     }
